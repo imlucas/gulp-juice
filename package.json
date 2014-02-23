@@ -1,0 +1,28 @@
+{
+  "name": "gulp-juice",
+  "description": "process html files through juice to inline CSS",
+  "version": "0.0.1",
+  "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com> (http://imlucas.com)",
+  "license": "MIT",
+  "homepage": "http://github.com/imlucas/gulp-juice",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imlucas/gulp-juice.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+    "through": "~2.3.4",
+    "juice": "~0.4.0"
+  },
+  "keywords": [
+    "gulpplugin",
+    "juice",
+    "inlinecss"
+  ],
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  }
+}
