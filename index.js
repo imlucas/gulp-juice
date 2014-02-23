@@ -1,21 +1,18 @@
-var through = require('through'),
+var es = require('event-stream'),
     gutil = require('gulp-util'),
-    juice = require('juice'),
+    juiceContent = require('juice').juiceContent,
     File = gutil.File,
+    PluginError = gutil.PluginError,
     crypto = require('crypto');
 
 module.exports = function(options){
   options = options || {};
-
-  return through(function(file){
-    if(file.isNull()) return;
-    var self = this;
-
-    juice(file.path, function(err, html) {
-      self.emit('data', new File({
-        contents: new Buffer(html),
-        path: file.path
-      }));
+  return es.map(function(file, fn){
+      options.url = 'file://' + file.path;
+      juiceContent(file.contents, options, function(err, html){
+        if(err) return fn(err);
+        file.contents = new Buffer(html);
+        fn(null, file);
+      });
     });
-  });
 };
