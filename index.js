@@ -1,6 +1,6 @@
 var es = require('event-stream'),
     gutil = require('gulp-util'),
-    juiceContent = require('juice').juiceContent,
+    juice = require('juice').juiceResources,
     File = gutil.File,
     PluginError = gutil.PluginError,
     crypto = require('crypto');
@@ -8,8 +8,7 @@ var es = require('event-stream'),
 module.exports = function(options){
   options = options || {};
   return es.map(function(file, fn){
-      options.url = 'file://' + file.path;
-      juiceContent(file.contents, options, function(err, html){
+      juice(file.contents.toString(), {}, function(err, html){
         if(err) return fn(err);
         file.contents = new Buffer(html);
         fn(null, file);
