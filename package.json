@@ -1,7 +1,7 @@
 {
   "name": "gulp-juice",
   "description": "process html files through juice to inline CSS",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com> (http://imlucas.com)",
   "license": "MIT",
   "homepage": "http://github.com/imlucas/gulp-juice",
