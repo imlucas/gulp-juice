@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com> (http://imlucas.com)",
   "license": "MIT",
-  "homepage": "http://github.com/imlucas/gulp-juice",
+  "homepage": "http://github.com/zebapy/gulp-juice",
   "repository": {
     "type": "git",
-    "url": "git://github.com/imlucas/gulp-juice.git"
+    "url": "git://github.com/zebapy/gulp-juice.git"
   },
   "scripts": {
     "test": "mocha"
