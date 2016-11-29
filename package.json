@@ -15,7 +15,7 @@
   "dependencies": {
     "event-stream": "^3.3.4",
     "gulp-util": "^3.0.7",
-    "juice": "^3.0.1"
+    "juice": "^4.0.0"
   },
   "keywords": [
     "gulpplugin",
