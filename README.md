@@ -7,7 +7,7 @@ inline CSS.
 
 ## Examples
 
-```
+```js
 var juice = require('gulp-juice');
 
 gulp.task('bootloader', function(){
@@ -22,7 +22,7 @@ gulp.task('deploy', ['build', 'manifest', 'bootloader', 'publishtoS3']);
 Protip when using with a template renderer: need to pipe to dest first as
 you probably want `juice` resolving css relative to our actual build output:
 
-```
+```js
 var juice = require('gulp-juice'),
   jade = require('gulp-jade');
 
