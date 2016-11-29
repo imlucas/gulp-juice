@@ -3,6 +3,10 @@
   "description": "process html files through juice to inline CSS",
   "version": "0.1.0",
   "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com> (http://imlucas.com)",
+  "contributors": [
+    "Zeb Pykosz <zeb.apy@gmail.com> (http://zeb.codes/)",
+    "Akzhan Abdulin <akzhan.abdulin@gmail.com> (http://akzhan.github.io/)"
+  ],
   "license": "MIT",
   "homepage": "http://github.com/zebapy/gulp-juice",
   "repository": {
